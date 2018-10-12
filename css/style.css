@@ -38,14 +38,24 @@
     color: #95e1d3;  
 }
 .menuitem:hover {
+    transition-property: color;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
     color: #f38181;
 }
-.menuitem:hover::after {
+.menuitem:after {  
     content: "";
     display: block;
     background-color: #f38181;
     height: 3px;
     margin: 12px auto;
+    opacity: 0;
+}
+.menuitem:hover:after {
+    transition-property: opacity;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    opacity: 1;
 }
 .main {
     width: 1200px;
