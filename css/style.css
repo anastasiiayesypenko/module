@@ -29,7 +29,7 @@
 .navigation li:not(:last-child) {
     padding-right: 60px;
 }
-.menuitem {
+.menu-link {
     display: inline-block;
     text-decoration: none; 
     text-transform: uppercase;
@@ -37,13 +37,13 @@
     font-size: 14px;
     color: #95e1d3;  
 }
-.menuitem:hover {
+.menu-link:hover {
     transition-property: color;
     transition-timing-function: linear;
     transition-duration: 200ms;
     color: #f38181;
 }
-.menuitem:after {  
+.menu-link:after {  
     content: "";
     display: block;
     background-color: #f38181;
@@ -51,7 +51,7 @@
     margin: 12px auto;
     opacity: 0;
 }
-.menuitem:hover:after {
+.menu-link:hover:after {
     transition-property: opacity;
     transition-timing-function: linear;
     transition-duration: 200ms;
@@ -247,7 +247,7 @@
     text-decoration: none;
     color: #f38181;
 }
-.button {
+.subscribe {
     margin-top: 10px;
 }
 .input_email {
@@ -262,7 +262,7 @@
     line-height: 24px;
     border: 1px solid #e7e7e7;
 }
-.subscribe {
+.button {
     height: 40px;
     width: 150px;
     background-color: #95e1d3;
